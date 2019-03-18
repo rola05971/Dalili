@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>الأماكن السياحية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <STYLE>
+            
+        .p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 100px;
+            font-style: normal;
+            color: rgb(230, 27, 27);
+        }
+        .p2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            font-style: normal;
+            color: rgba(17, 7, 7, 0.897);
+        }
+
+        .Limg {
+            background-image: url(Im1.jpg);
+            height: 50px;
+            width: 1366px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+
+        .l {
+
+
+            background-color: #03F;
+
+            height: 70px;
+            width: 1366px;
+            position: absolute;
+            left: 0px;
+            top: 50px;
+        }
+
+
+
+
+        .List {
+            padding-top: 4px;
+            height: 70px;
+            width: 712px;
+            position: absolute;
+            left: 330px;
+            top: 51px;
+        }
+
+
+
+        .List a:hover {
+            color: #03C;
+            background-color: #FFF;
+
+
+        }
+
+        .List a:active {
+            background-color: #06F;
+        }
+
+        ul li {
+
+            display: inline;
+        }
+
+        ul li a {
+            height: 70px;
+            padding-right: 200px;
+            margin-top: 2px;
+            font-size: 21px;
+            color: #FFF;
+            background-color: #03f;
+            padding: 20px;
+            text-decoration: none;
+            border-radius: 1px 1px 1px 1px;
+
+        }
+
+
+        #drop {
+            width: 200px;
+            height: 70px;
+            position: absolute;
+            display: none;
+            list-style: none;
+            z-index: 20;
+            left: 401px;
+            top: 72px;
+        }
+
+        #drop li {
+
+            display: list-item;
+            width: 200px;
+            height: 40px;
+            float: none;
+
+
+
+        }
+
+
+        #drop li a {
+
+
+
+            background: blue;
+            color: #FFF;
+            border-bottom: 1px solid #bbb;
+            padding: 5px 10px;
+            width: 140px;
+
+        }
+
+        #drop a:hover {
+            background-color: #F9F;
+
+            color: #03F;
+        }
+
+        #sub:hover #drop {
+            display: block;
+        }
+
+
+
+
+        .Animatedtextandicon {
+            top: 120px;
+            left: 0px;
+            height: 70px;
+            width: 1361px;
+
+            position: absolute;
+        }
+
+
+
+        .icon {
+            height: 65px;
+            width: 370px;
+
+            position: absolute;
+        }
+
+        .facebook {
+            height: 32px;
+            width: 39px;
+
+            position: absolute;
+            left: 183px;
+            top: 17px;
+            transition: all 2s
+        }
+
+        .facebook:hover {
+            top: 2px;
+        }
+
+        .twiter {
+            height: 32px;
+            width: 39px;
+            position: absolute;
+            left: 131px;
+            top: 17px;
+            transition: all 2s
+        }
+
+        .twiter:hover {
+            top: 2px;
+        }
+
+        .google {
+            height: 32px;
+            width: 39px;
+
+            position: absolute;
+            left: 82px;
+            top: 17px;
+            transition: all 2s
+        }
+
+        .google:hover {
+            top: 2px;
+
+
+        }
+
+        .youtube {
+            height: 32px;
+            width: 39px;
+
+            position: absolute;
+            left: 32px;
+            top: 17px;
+            transition: all 2s;
+        }
+
+        .youtube:hover {
+            top: 2px;
+
+
+        }
+
+        .Animatedtext {
+            width: 980px;
+            height: 65px;
+            position: absolute;
+            left: 378px;
+            top: 2px;
+        }
+
+        .Animatedtext p {
+            color: #C00;
+            font-size: 24px;
+        }
+
+        .login {
+
+            height: 227px;
+            width: 282px;
+
+            position: absolute;
+            left: 1081px;
+            top: 76px;
+        }
+
+        .login1 {
+            border-radius: 5px 5px 5px 5px;
+            background-color: #03F;
+            height: 63px;
+            width: 231px;
+            position: absolute;
+            left: 46px;
+            top: 7px;
+        }
+
+        .login1 p {
+            top: 2px;
+
+            font-size: 24px;
+            color: #FFF;
+            text-align: center;
+        }
+
+        .login2 {
+            height: 63px;
+            width: 271px;
+            position: absolute;
+            left: 4px;
+            top: 89px;
+        }
+
+        .imgs {
+            background-image: url(file:///C|/Users/toshiba/Downloads/s2.jpg);
+            height: 178px;
+            width: 235px;
+            border: 1px solid #9C3;
+            position: absolute;
+            left: 1125px;
+            top: 311px;
+        }
+
+        .imgs:hover {
+            background-image: url(file:///C|/Users/toshiba/Downloads/s1.jpg);
+        }
+
+
+        #olivebenefits {
+            background-image: url(olive%20benefits.PNG);
+            border: 2px solid #C93;
+            position: absolute;
+            top: 55px;
+            left: 233px;
+            width: 150px;
+            height: 150px;
+
+            border-radius: 175px 175px 175px 175px;
+        }
+
+        #bananabenifits {
+            background-image: url(banana%20benifits.PNG);
+
+            border: 2px solid #C93;
+
+            position: absolute;
+            top: 55px;
+            left: 403px;
+            width: 150px;
+            height: 150px;
+            border-radius: 175px 175px 175px 175px;
+        }
+
+        #benenfitspomegranate {
+            background-image: url(benenfits%20of%20pomegranate.PNG);
+            border: 2px solid #C93;
+            position: absolute;
+            top: 55px;
+            left: 581px;
+            width: 150px;
+            height: 150px;
+            border-radius: 175px 175px 175px 175px;
+        }
+
+        #benefitsbutter {
+            background-image: url(benefits%20butter.PNG);
+            border: 2px solid #C93;
+            position: absolute;
+            top: 55px;
+            left: 58px;
+            width: 150px;
+            height: 150px;
+            border-radius: 175px 175px 175px 175px;
+        }
+
+        .hidden {
+            display: none;
+            height: 299px;
+            width: 760px;
+            position: absolute;
+            left: -16px;
+            top: 70px;
+        }
+
+        .textbenefitsbutter {
+            height: 43px;
+            width: 121px;
+
+            position: absolute;
+            left: 2px;
+            top: 178px;
+        }
+
+        .textbananabenifits {
+            height: 43px;
+            width: 121px;
+
+            position: absolute;
+            left: 11px;
+            top: 178px;
+        }
+
+        .textbenenfitspomegranate {
+            height: 38px;
+            width: 121px;
+
+            position: absolute;
+            left: 14px;
+            top: 178px;
+        }
+
+        .textolivebenefits {
+            height: 43px;
+            width: 121px;
+
+            position: absolute;
+            left: 11px;
+            top: 178px;
+        }
+
+        .texthidden {
+
+
+            height: 25px;
+            width: 137px;
+
+            position: absolute;
+            left: 616px;
+            top: 14px;
+        }
+
+        .hidden a {
+
+            text-decoration: none;
+        }
+
+        .hidden a:hover {
+            background-image: url(images.jpg);
+
+
+
+        }
+
+        .ru {
+
+            position: absolute;
+            width: 156px;
+            height: 80px;
+            left: 428px;
+            top: -70px;
+        }
+
+        .ru:hover .hidden {
+            display: block;
+        }
+
+        .imgslider {
+
+            z-index: -1;
+            height: 500px;
+            width: 830px;
+
+            position: absolute;
+            left: 200px;
+            top: 90px;
+
+        }
+
+        #sliderFrame {
+            position: relative;
+            width: 830px;
+            margin: 0 auto;
+            border: 5px solid #000;
+            border-bottom: 25px solid #000;
+            background: #fff;
+
+        }
+
+
+        #slider {
+            width: 830px;
+            height: 500px;
+            background: #fff url(https://lh4.googleusercontent.com/-k6J7L0AmqnE/UV7FswW-qsI/AAAAAAAABC0/iwjr-yjs8Tg/s39/cnmuslidlod.gif) no-repeat 50% 50%;
+            position: relative;
+            margin: 0 auto;
+            box-shadow: 0px 1px 5px #999999;
+        }
+
+        #slider a.imgLink {
+            z-index: 2;
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        div.mc-caption-bg,
+        div.mc-caption-bg2 {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            left: 0px;
+            bottom: 0px;
+            z-index: 3;
+
+
+        }
+
+        div.mc-caption-bg {
+            background-color: black;
+        }
+
+        div.mc-caption {
+            font: bold 24px/20px Arial;
+            color: #EEE;
+            z-index: 4;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+
+        div.navBulletsWrapper {
+            top: 505px;
+
+            position: relative;
+            z-index: 5;
+
+        }
+
+        div.navBulletsWrapper div {
+            width: 11px;
+            height: 11px;
+            background: transparent url(https://lh5.googleusercontent.com/-7NRCeJsVpFQ/UV7Fs6xP8RI/AAAAAAAABCw/REtO-oLoX7Q/s22/cnmu-sliddot.png) no-repeat 0 0;
+            float: left;
+            overflow: hidden;
+            vertical-align: middle;
+
+            margin-right: 11px;
+            position: relative;
+        }
+
+
+
+        div.navBulletsWrapper div.active {
+            background-position: 0 -11px;
+        }
+
+
+        .last {
+            border: 1px solid #00F;
+            background-color: #03F;
+            height: 93px;
+            width: 1370px;
+            position: absolute;
+            left: 0px;
+            top: 650px;
+        }
+
+        .last1 {
+            padding-top: 15px;
+
+            height: 93px;
+            width: 500px;
+            position: absolute;
+            left: 1px;
+            top: 0px;
+        }
+
+        .last2 {
+
+
+            height: 93px;
+            width: 500px;
+            position: absolute;
+            left: 870px;
+            top: 0px;
+        }
+
+        .last a {
+
+
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .imgright {
+            padding-left: 10px;
+            height: 431px;
+            width: 170px;
+
+            position: absolute;
+            left: 13px;
+            top: 140px;
+        }
+
+        .imgright1 {
+            padding-left: 10px;
+            height: 80px;
+            width: 170px;
+
+            position: absolute;
+            left: 0px;
+            top: 122px;
+        }
+
+        .imgright2 {
+            padding-left: 10px;
+            height: 80px;
+            width: 170px;
+
+            position: absolute;
+            left: -1px;
+            top: 218px;
+        }
+
+        .imgright3 {
+            padding-left: 10px;
+            height: 80px;
+            width: 170px;
+
+            position: absolute;
+            left: 0px;
+            top: 315px;
+        }
+
+        .imgright4 {
+            padding-left: 10px;
+            height: 80px;
+            width: 170px;
+
+            position: absolute;
+            left: -1px;
+            top: 30px;
+        }
+
+        .imgright img {
+            transition: all 2s;
+            border-radius: 175px 175px 175px 175px;
+        }
+
+        .imgright img:hover {
+
+            transform: rotate(360deg);
+        }
+
+        .text {
+            display: none;
+            text-align: center;
+            color: #FFF;
+            background-color: #333;
+            border-radius: 175px 175px 175px 0px;
+            width: 110px;
+            height: 40px;
+            position: absolute;
+            left: 87px;
+            top: 32px;
+        }
+
+        .imgright1:hover .text,
+        .imgright2:hover .text,
+        .imgright3:hover .text,
+        .imgright4:hover .text {
+
+            display: block;
+        }
+    </STYLE>
+
+</head>
+
+<body background="images.jpg">
+
+
+    <div class="Limg"></div>
+    <div class="l"></div>
+    <div class="List">
+            <ul dir="rtl"  ><td>
+                 <li><a href="index.html" >الرئيسية</a></li>
+                    <li id="sub"><a href="Page8.html">الآثار</a>
+                    <ul id="drop">
+                    <li> <a href="Page2.html" >قلعة برقوق </a></li>
+                    <li> <a href="Page3.html">  المسجد العمري </a></li>
+                    
+                    </ul>
+                    
+                    </li>
+                    
+                    
+                    <li><a href="Page9.html" class="list1">الأماكن السياحية</a></li>
+                    <li><a href="Page10.html" class="list1">الأماكن الترفيهية</a></li>
+                </td>
+                    </ul>
+
+    </div>
+       
+</head>
+<br/><br/>
+   <center> <p class="p">الأماكن السياحية</p></center>
+        <center> <table>
+                <tr>
+                        <td>
+                        <a href="Page6.html">
+                            <img src="بحر1.JPG" alt="2" width="200" height="200" align="bottom" />
+                            <p >بحر غزة</p>
+                        </a></td>
+                        <td>
+                        <a href="Page7.html">
+                            <img src="اص1.JPG" alt="1" width="200" height="200" align="bottom" />
+                            <p >مدينة أصداء</p>
+                        </a>
+                        </td>
+                    </tr>
+        </tabel></center>
+
+   
+    <table class="p2">
+   <td> <p><a href=" index.html#Page">1</a></p></td>
+   <td> <p><a href=" Page2.html#Page">2</a></p></td>
+    <td> <p><a href=" Page3.html#Page">3</a></p></td>
+   <td><p><a href=" Page4.html#Page">4</a></p></td>
+  <td> <p><a href=" Page5.html#Page">5</a></p></td>
+  <td> <p><a href=" Page6.html#Page">6</a></p></td>
+    <td> <p><a href=" Page7.html#Page">7</a></p></td>
+</table>
+</body>
+</html>
